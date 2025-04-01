@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(to right, #e3eaff, #a5c2ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: 50%;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px #b0c9ff;
+    h1{
+        color: rgb(63, 63, 63);
+    }
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex:1;
+    flex-direction: column;
+    height: 100%;
+    gap: 25px;
+
+    .buttom{
+        border: 2px solid white;
+        border-radius: 10px;
+        padding: 10px;
+        width: 150px;
+        text-align: center;
+        text-decoration: none;
+        background-color: #6f9dff;
+        color: white;
+    }
+}
+.loginBox, .registerBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    .btnLogin{
+        width: 100%;
+    }
+    input{
+        border: 0;
+        background-color: rgba(212, 212, 212, 0.527);
+        border-radius: 10px;
+        height: 40px;
+        width: 100%;
+        padding-left: 15px;
+    }
+    input:focus{
+        outline: none;
+
+    }
+}
+.bg{
+    background-color: #6f9dff;
+    border-radius: 15px 100px 100px 15px;
+    h1, p, a{
+        color: white;
+    }
+}
+.bgLeft{
+    background-color: #6f9dff;
+    border-radius: 100px 15px 15px 100px;
+    h1, p, a{
+        color: white;
+    }
+}
+.message{
+    position: fixed;
+    top: 10px;
+    background-color: white;
+    width: 250px;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    display: none;
+}
