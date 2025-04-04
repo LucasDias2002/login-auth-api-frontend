@@ -5,11 +5,11 @@ const path = require("path");
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, "public", "login.html"));
+    res.sendFile(path.join(__dirname, "/public", "login.html"));
 });
 
 app.get("/register", (req, res) => {
-    res.sendFile(path.join(__dirname, "public", "register.html"));
+    res.sendFile(path.join(__dirname, "/public", "register.html"));
 });
 
 app.listen(3000, () => {
