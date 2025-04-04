@@ -7,7 +7,7 @@
 }
 body{
     height: 100vh;
-    background: linear-gradient(to right, #e3eaff, #a5c2ff);
+    background: linear-gradient(to right, #e3eaff, #9ebcfd);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,16 +87,37 @@ body{
         text-align: center;
     }
 }
+.messageLogin, .messageRegister{
+    display: none;
+}
+
 .message{
     position: fixed;
     top: 10px;
-    background-color: white;
-    width: 250px;
-    height: 80px;
+    right: 10px;
+    width: 300px;
+    height: 63px;
     align-items: center;
-    justify-content: center;
-    border-radius: 15px;
-    display: none;
+    color: white;
+    font-size: 1.0rem;
+    border-radius: 5px;
+    display: flex;
+    padding-left:5px ;
+    .res{
+        display: flex;
+        i{
+            font-size: 45px;
+        }
+        align-items: center;
+    }
+}
+.redBox{
+    background-color: rgb(226, 73, 73);
+    box-shadow: 0px 0px 4px rgb(175, 56, 56);
+}
+.greenBox{
+    background-color: #51a351;
+    box-shadow: 0px 0px 4px #3b773b;
 }
 
 @media (max-width: 870px){
