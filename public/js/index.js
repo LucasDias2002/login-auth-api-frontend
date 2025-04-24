@@ -9,7 +9,7 @@ async function login() {
     try {
         console.log("Enviando requisição de login...");
 
-        let response = await fetch('http://127.0.0.1:8080/auth/login', {
+        let response = await fetch('http://18.191.72.7:8080/auth/login', {
             method: 'POST',
             headers: {
                 "Accept": "application/json",
@@ -49,7 +49,7 @@ async function register() {
     try {
         console.log("Enviando requisição de registro...");
 
-        let response = await fetch('http://127.0.0.1:8080/auth/register', {
+        let response = await fetch('http://18.191.72.7:8080/auth/register', {
             method: 'POST',
             headers: {
                 "Accept": "application/json",
