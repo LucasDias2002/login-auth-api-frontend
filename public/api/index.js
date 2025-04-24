@@ -8,7 +8,7 @@ async function login() {
     try {
         console.log("Enviando requisição de login...");
 
-        let data = await sendRequest('http://18.191.72.7:8080/auth/login', {
+        let data = await sendRequest('https://18.191.72.7:8080/auth/login', {
             email: email,
             password: password
         });
@@ -33,7 +33,7 @@ async function register() {
     try {
         console.log("Enviando requisição de registro...");
 
-        let data = await sendRequest('http://18.191.72.7:8080/auth/register', {
+        let data = await sendRequest('https://18.191.72.7:8080/auth/register', {
             name: name,
             email: email,
             password: password
