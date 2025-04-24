@@ -1,4 +1,4 @@
-async function login() {
+export default async function login() {
 
     let email = document.getElementById('email').value;
     let password = document.getElementById('password').value;
@@ -20,7 +20,7 @@ async function login() {
                 password: password
             })
         });
-
+        
         if (!response.ok) {
             throw new Error(`Erro HTTP: ${response.status}`);
         }
@@ -38,7 +38,7 @@ async function login() {
 
 }
 
-async function register() {
+export default async function register() {
     let name = document.getElementById('name').value;
     let email = document.getElementById('email').value;
     let password = document.getElementById('password').value;
